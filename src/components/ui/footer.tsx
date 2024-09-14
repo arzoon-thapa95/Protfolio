@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='text-center sm:flex items-center justify-between border-t border-neutral-300 mx-[10%] mt-12 py-6 font-Josefin dark:text-whiteText'>
-          <p>&copy; Arjun Thapa.All rights reserved</p>
+          <p> Arjun Thapa.All rights reserved</p>
           <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0 font-Josefin'>
             <li className='underline hover:text-blue-500'>
               <a

@@ -21,7 +21,7 @@ const Services = () => {
           {servicesData.map((item) => {
             console.log(item, "itemitemitemitem");
             return (
-              <div className='flex justify-center'>
+              <div key={item.id} className='flex justify-center'>
                 <ServiceCard
                   key={item.id}
                   id={item.id}

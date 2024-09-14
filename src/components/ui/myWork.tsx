@@ -1,9 +1,10 @@
+"use client";
 import { MoveRight, SendIcon } from "lucide-react";
 import React from "react";
 
 const MyWork = () => {
   return (
-    <section
+    <div
       id='work'
       className='w-auto h-auto bg-white scroll-mt-10 dark:bg-darkTheme'
     >
@@ -29,7 +30,7 @@ const MyWork = () => {
               <h1 className='text-start font-Josefin font-bold '>
                 Sushimerksem
               </h1>
-              <p className='font-Josefin'>
+              <div className='font-Josefin'>
                 <ul className='list-disc font-semibold text-start text-xs text-zinc-500'>
                   <li>
                     <strong>Dashboard Design and Integration.</strong>
@@ -44,26 +45,26 @@ const MyWork = () => {
                     <strong>API Integration</strong>
                   </li>
                 </ul>
-              </p>
+              </div>
 
               <ul className='items-center gap-3 sm:gap-2 w-auto flex-wrap text-xs text-zinc-500 flex self-stretch '>
                 <li className='flex items-center justify-center sm:w-7  border-gray shadow-md rounded-lg cursor-pointer hover:bg-slate-300 duration-500 w-auto px-2 py-2 min-w-14 dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''>React</p>
+                  React
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-2 py-2 min-w-24 w-auto text-nowrapdark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''>Javascript</p>
+                  Javascript
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''>TypeScript</p>
+                  TypeScript
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''>Tailwind CSS</p>
+                  Tailwind CSS
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''> TanStack Query</p>
+                  TanStack Query
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''> TanStack Table</p>
+                  TanStack Table
                 </li>
               </ul>
             </div>
@@ -83,54 +84,53 @@ const MyWork = () => {
               <h1 className='font-Josefin font-bold text-zinc-700 text-start'>
                 Sharebigya
               </h1>
-              <p className='font-Josefin'>
-                <ul className='list-disc font-semibold text-start text-xs text-zinc-500'>
-                  <li>
-                    <strong>
-                      Responsive Design: Developed and implemented responsive
-                      design to ensure compatibility across various devices and
-                      screen sizes.
-                    </strong>
-                  </li>
-                  <li>
-                    <strong>
-                      UI Design with Figma: Designed and prototyped user
-                      interfaces using Figma, focusing on user experience and
-                      aesthetic appeal.
-                    </strong>
-                  </li>
-                  <li>
-                    <strong>
-                      API Integration: Integrated APIs to connect front-end
-                      components with back-end services, enhancing functionality
-                      and data flow.
-                    </strong>
-                  </li>
-                  <li>
-                    <strong>
-                      Component Creation and Design: Created and designed
-                      reusable components to streamline development and maintain
-                      consistency across the application.
-                    </strong>
-                  </li>
-                </ul>
-              </p>
+
+              <ul className='list-disc font-semibold text-start text-xs text-zinc-500 font-Josefin'>
+                <li>
+                  <strong>
+                    Responsive Design: Developed and implemented responsive
+                    design to ensure compatibility across various devices and
+                    screen sizes.
+                  </strong>
+                </li>
+                <li>
+                  <strong>
+                    UI Design with Figma: Designed and prototyped user
+                    interfaces using Figma, focusing on user experience and
+                    aesthetic appeal.
+                  </strong>
+                </li>
+                <li>
+                  <strong>
+                    API Integration: Integrated APIs to connect front-end
+                    components with back-end services, enhancing functionality
+                    and data flow.
+                  </strong>
+                </li>
+                <li>
+                  <strong>
+                    Component Creation and Design: Created and designed reusable
+                    components to streamline development and maintain
+                    consistency across the application.
+                  </strong>
+                </li>
+              </ul>
 
               <ul className='flex items-center gap-3 sm:gap-2 w-auto flex-wrap text-xs text-zinc-500'>
                 <li className='flex items-center justify-center sm:w-7  border-gray shadow-md rounded-lg cursor-pointer hover:bg-slate-300 duration-500 w-auto px-2 py-2 min-w-14 dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''>React</p>
+                  React
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''>TypeScript</p>
+                  TypeScript
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''>Tailwind CSS</p>
+                  Tailwind CSS
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''> TanStack Query</p>
+                  TanStack Query
                 </li>
                 <li className='flex items-center justify-center sm:w-7 border-gray shadow-md  rounded-lg cursor-pointer hover:bg-slate-300 duration-500 px-6 py-2 min-w-24 w-auto text-nowrap dark:hover:bg-black/40 dark:bg-black/80'>
-                  <p className=''> TanStack Table</p>
+                  TanStack Table
                 </li>
               </ul>
             </div>
@@ -144,7 +144,7 @@ const MyWork = () => {
           <MoveRight className='w-4' />
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

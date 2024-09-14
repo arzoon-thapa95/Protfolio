@@ -6,8 +6,8 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Protfolio",
-  description: " create by Arjun Thapa",
+  title: "Portfolio",
+  description: "Created by Arjun Thapa",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={`scroll-smooth`}>
+    <html lang='en' suppressHydrationWarning={true} className={`scroll-smooth`}>
       <body
         className={`${inter.className} antialiased min-h-screen dark:bg-darkTheme bg-white`}
       >

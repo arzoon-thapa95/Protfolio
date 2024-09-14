@@ -1,7 +1,7 @@
 "use client";
 import { navData } from "@/example";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { AlignRightIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
+import { AlignRightIcon, MoonIcon, SunIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -65,9 +65,10 @@ const NavBar = () => {
   };
 
   const { theme, setTheme } = useTheme();
+  console.log("theme", theme);
 
   return (
-    <section className='w-auto h-auto relative z-10 scroll-mt-5 bg-white dark:bg-darkTheme'>
+    <div className='w-auto h-auto relative z-10 scroll-mt-5 bg-white dark:bg-darkTheme'>
       <nav className='w-screen fixed px-5 lg:px-8 xl:px-[8%] py-2 flex items-center justify-between  top-0 left-0 right-0 shadow-md bg-white dark:bg-darkTheme'>
         <h1 className='fancy-wipe text-gray-500 font-Josefin'>
           <span className='text-nowrap font-Josefin font-semibold text-start'>
@@ -90,36 +91,26 @@ const NavBar = () => {
           })}
         </ul>
         <div className='flex justify-end items-center gap-4 text-black w-full '>
-          {/* <a
-            href='contact'
-            className='lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 text-gray-500 hover:border-hoverColor w-auto font-Josefin dark:border-whiteText dark:text-white'
-          >
-            Contact
-          </a> */}
-          {/* <a
-            href='contact'
-            className='lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 text-gray-500 inline hover:border-hoverColor text-nowrap font-Josefin dark:border-whiteText dark:text-white'
-          >
-            Download CV
-          </a> */}
-          <button
+          <div
             className='bg-white  opacity-100 h-12 w-12  rounded-full flex items-center justify-center dark:bg-darkTheme border-gray-500 dark:border-whiteText'
             onClick={() =>
               theme == "dark" ? setTheme("light") : setTheme("dark")
             }
           >
-            {theme === "light" ? (
-              <MoonIcon
-                className=' items-center gap-5 text-gray-500 hover:text-hoverColor cursor-pointer dark:hidden '
-                // onClick={toggleTheme}
-              />
-            ) : (
-              <SunIcon
-                className=' items-center gap-5 text-gray-500 hover:text-hoverColor cursor-pointer hidden dark:block dark:text-white dark:bg-darkTheme'
-                // onClick={toggleTheme}
-              />
-            )}
-          </button>
+            {/* <div>
+              {theme === "light" ? (
+                <MoonIcon
+                  className=' items-center gap-5 text-gray-500 hover:text-hoverColor cursor-pointer dark:hidden '
+                  // onClick={toggleTheme}
+                />
+              ) : (
+                <SunIcon
+                  className=' items-center gap-5 text-gray-500 hover:text-hoverColor cursor-pointer hidden dark:block dark:text-white dark:bg-darkTheme'
+                  // onClick={toggleTheme}
+                />
+              )}
+            </div> */}
+          </div>
 
           <AlignRightIcon
             className='block md:hidden ml-3 text-gray-500 cursor-pointer hover:text-hoverColor text-current dark:text-white'
@@ -132,13 +123,14 @@ const NavBar = () => {
               id='sideMenu'
               className='flex justify-center  items-center md:hidden flex-col py-[4px] px-10 fixed -right-0 top-0 bottom-0 w-full z-50 h-screen bg-blue-100 transition duration-500 gap-4 text-gray-500 font-Josefin dark:bg-mobileNav dark:text-whiteText '
             >
-              <XIcon
+              {/* <XIcon
                 className='absolute right-6 top-6 text-gray-500'
                 onClick={handleClose}
-              />
+              /> */}
               {navData.map((item) => {
                 return (
                   <motion.li
+                    key={item.id}
                     animate={{ x: 100 }}
                     transition={{ ease: "easeOut", duration: 2 }}
                     onClick={handleClose}
@@ -153,7 +145,7 @@ const NavBar = () => {
           )}
         </div>
       </nav>
-    </section>
+    </div>
   );
 };
 
