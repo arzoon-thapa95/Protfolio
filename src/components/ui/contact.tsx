@@ -54,8 +54,8 @@ const Contact = () => {
         </h4>
         <h2 className='text-center text-5xl font-Josefin'>Get in touch</h2>
         <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Josefin'>
-          I'd love to hear from you! If you have any question, comments or
-          feedback, please use the form below.
+          {`I'd love to hear from you! If you have any question, comments or
+          feedback, please use the form below.`}
         </p>
         <form
           // method='POST'

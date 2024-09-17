@@ -8,7 +8,9 @@ const AppLayout = ({ children }: { children: React.ReactNode }) => {
       <NavBar />
       <main className='min-h-screen w-full  '>
         {children}
-        <div>{/* <Footer /> */}</div>
+        <div>
+          <Footer />
+        </div>
       </main>
     </div>
   );

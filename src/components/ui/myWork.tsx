@@ -1,5 +1,6 @@
 "use client";
 import { MoveRight, SendIcon } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const MyWork = () => {
@@ -18,7 +19,7 @@ const MyWork = () => {
         <div className='flex flex-col md:grid md:grid-cols-auto gap-6 my-10'>
           <div className='border rounded-lg px-2 py-2 hover:bg-slate-100 cursor-pointer dark:hover:bg-hoverDarkColor hover:-translate-y-1 duration-500 justify-between gap-2 w-auto hover:shadow-whiteShadow border-neutral-300'>
             <div className='w-full rounded-lg'>
-              <img
+              <Image
                 src='../images/photo-1605559424843-9e4c228bf1c2.jpg'
                 alt='project one'
                 height={1000}
@@ -72,7 +73,7 @@ const MyWork = () => {
 
           <div className='border rounded-lg px-2 py-2 hover:bg-slate-100 cursor-pointer dark:hover:bg-hoverDarkColor hover:-translate-y-1 duration-500 justify-between gap-2 w-auto hover:shadow-whiteShadow border-neutral-300'>
             <div className='w-full rounded-lg'>
-              <img
+              <Image
                 src='../images/photo-1605559424843-9e4c228bf1c2.jpg'
                 alt='project one'
                 height={1000}
