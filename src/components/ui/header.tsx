@@ -1,20 +1,22 @@
 import { DownloadCloudIcon, MoveRightIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import avatarImg from "/public/images/arjunThapa.jpeg";
 
 const Header = () => {
   return (
     <section className='bg-white w-auto h-full scroll-mt-10 dark:bg-darkTheme mb-20 mt-20'>
       <div className='text-black dark:text-white bg-white w-11/12 max-w-3xl text-center mx-auto h-auto flex flex-col items-center justify-center gap-4 my-auto dark:bg-darkTheme mt-16'>
-        <p className='rounded-full w-20'>
+        <div className='w-16 inline-block'>
           <Image
-            src='/public/images/arjunThapa.jpeg'
+            src={avatarImg}
             alt='next'
             height={1000}
             width={1000}
-            className='w-1/2 sm:w-60 mb-2 rounded-full'
+            className='max-w-20% h-auto  mb-2 rounded-full'
           />
-        </p>
+        </div>
+
         <h3 className='felx items-end gap-2 text-xl md:text-2xl mb-3 font-Nunito dark:text-white'>
           {` Hi I'm Arjun Thapa`}
         </h3>

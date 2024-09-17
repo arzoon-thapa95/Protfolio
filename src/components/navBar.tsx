@@ -1,9 +1,9 @@
 "use client";
 import { navData } from "@/example";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion } from "framer-motion";
 import { AlignRightIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import React from "react";
 
 // function useMenuAnimation(isOpen: boolean) {
@@ -115,7 +115,7 @@ const NavBar = () => {
           <AlignRightIcon
             className='block md:hidden ml-3 text-gray-500 cursor-pointer hover:text-hoverColor text-current dark:text-white'
             onClick={handleOpen}
-          ></AlignRightIcon>
+          />
         </div>
         <div
         //  ref={scope}
@@ -127,7 +127,7 @@ const NavBar = () => {
             >
               <XIcon
                 className='absolute right-6 top-6 text-gray-500'
-                // onClick={handleClose}
+                onClick={handleClose}
               />
               {navData.map((item) => {
                 return (
