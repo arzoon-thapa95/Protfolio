@@ -8,7 +8,7 @@ const Header = () => {
       <div className='text-black dark:text-white bg-white w-11/12 max-w-3xl text-center mx-auto h-auto flex flex-col items-center justify-center gap-4 my-auto dark:bg-darkTheme mt-16'>
         <p className='rounded-full w-20'>
           <Image
-            src='../images/arjunThapa.jpeg'
+            src='/public/images/arjunThapa.jpeg'
             alt='next'
             height={1000}
             width={1000}

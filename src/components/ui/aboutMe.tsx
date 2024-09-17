@@ -77,7 +77,13 @@ const AboutMe = () => {
                     className='flex items-center justify-center w-12 sm:w-7 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:shadow-whiteShadow duration-500 dark:border-white border-neutral-300'
                     key={item.id}
                   >
-                    <Image src={item.path} alt={item.alt} className='w-4' />
+                    <Image
+                      width={500}
+                      height={500}
+                      src={item.path}
+                      alt={item.alt}
+                      className='w-4'
+                    />
                   </li>
                 );
               })}

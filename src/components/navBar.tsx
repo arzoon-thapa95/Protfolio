@@ -1,7 +1,7 @@
 "use client";
 import { navData } from "@/example";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { AlignRightIcon, MoonIcon, SunIcon } from "lucide-react";
+import { AlignRightIcon, MoonIcon, SunIcon, XIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -97,7 +97,7 @@ const NavBar = () => {
               theme == "dark" ? setTheme("light") : setTheme("dark")
             }
           >
-            {/* <div>
+            <div>
               {theme === "light" ? (
                 <MoonIcon
                   className=' items-center gap-5 text-gray-500 hover:text-hoverColor cursor-pointer dark:hidden '
@@ -109,7 +109,7 @@ const NavBar = () => {
                   // onClick={toggleTheme}
                 />
               )}
-            </div> */}
+            </div>
           </div>
 
           <AlignRightIcon
@@ -125,10 +125,10 @@ const NavBar = () => {
               id='sideMenu'
               className='flex justify-center  items-center md:hidden flex-col py-[4px] px-10 fixed -right-0 top-0 bottom-0 w-full z-50 h-screen bg-blue-100 transition duration-500 gap-4 text-gray-500 font-Josefin dark:bg-mobileNav dark:text-whiteText '
             >
-              {/* <XIcon
+              <XIcon
                 className='absolute right-6 top-6 text-gray-500'
-                onClick={handleClose}
-              /> */}
+                // onClick={handleClose}
+              />
               {navData.map((item) => {
                 return (
                   <motion.li
